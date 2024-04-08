@@ -7,3 +7,6 @@ It will include
 ## Requirements
 - **Visual Studio 2022**
 - **.NET 8.0**
+- Must run on ASP.NET Core MVC
+- Database uses SQL Server
+- Website will be publihed to Microsoft Azure and run on Linux
