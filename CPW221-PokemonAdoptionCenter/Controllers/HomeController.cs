@@ -1,4 +1,5 @@
 using CPW221_PokemonAdoptionCenter.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -18,10 +19,13 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
             return View();
         }
 
+        [Authorize]//The user won't be able to view this page without an account
         public IActionResult Privacy()
         {
             return View();
         }
+
+        //User MUST make an account before applying to volunteer/adopt
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
