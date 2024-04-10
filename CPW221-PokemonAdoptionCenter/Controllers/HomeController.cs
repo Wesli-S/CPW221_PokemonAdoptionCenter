@@ -27,10 +27,17 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
 
         //User MUST make an account before applying to volunteer/adopt
 
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
     }
 }
