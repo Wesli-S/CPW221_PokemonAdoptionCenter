@@ -1,10 +1,13 @@
-﻿namespace CPW221_PokemonAdoptionCenter.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace CPW221_PokemonAdoptionCenter.Models
 {
     /// <summary>
     /// This class provides all info for Pokemon currently in the adoption center
     /// </summary>
     public class Pokemon
     {
+        [Key]
         /// <summary>
         /// Id number of specified Pokemon
         /// </summary>

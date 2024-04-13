@@ -15,6 +15,7 @@ namespace CPW221_PokemonAdoptionCenter.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+         
             modelBuilder.Entity<Pokemon>().HasData(
                 new Pokemon {Id = 1, Name = "Molla", PokemonType = "Haunter", Age = 307, Description = "Super sweet and a bit shy. Molla was found still in her ball after her owner had passed away, and now hopes to find a new playmate. She enjoys night walks and hide-and-seek", IsAvailable = true},
                 new Pokemon {Id = 2, Name = "Kinito", PokemonType = "Paldean Wooper", Age = 4, Description = "Coming all the way from the Paldea region, Kinito has a naturally upbeat personality. Kinito enjoys swimming, splashing in puddles, and long afternoon naps.", IsAvailable = true},
