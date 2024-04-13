@@ -23,7 +23,7 @@
         /// <summary>
         /// The Pokemon's current age
         /// </summary>
-        public byte Age { get; set; }
+        public int Age { get; set; }
 
         /// <summary>
         /// A brief description of the Pokemon and it's personality
