@@ -20,7 +20,7 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
         }
 
         [Authorize]//The user won't be able to view this page without an account
-        public IActionResult Privacy()
+        public IActionResult Volunteer()
         {
             return View();
         }
