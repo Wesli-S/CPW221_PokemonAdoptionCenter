@@ -7,18 +7,18 @@
 <h1>Our Lovely Residents</h1>
 
 <div class="container text-center">
-        <div class="row" style="padding-bottom: 10px">
-        @foreach(var item in Model)
+        <div class="row" >
+        @foreach(var item in Model)//Creates a column for each Pokemon in the database
         {
-            <div class="col">
+            <div class="col" style="padding-bottom: 10px">
                 <img src="https://placehold.co/250"></img>
                 <div class="accordion-item" style="width: 88%; margin: auto;">
                     <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="@item.Id" aria-expanded="false" aria-controls="aria-controls">
                             @item.Name
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div id="@item.Id" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p>Species: @item.PokemonType</p>
                             <p>Age: @item.Age</p>
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>//PROBLEM TO FIX: I want to make it so only the clicked accordion opens, instead of all of them opening at once. 
         }
-    <div/>
-
+        <div/>
+</div>
