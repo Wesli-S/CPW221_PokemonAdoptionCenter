@@ -13,7 +13,7 @@ namespace CPW221_PokemonAdoptionCenter.Data
 
         public DbSet<Pokemon> pokemons { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)//FIGURE OUT HOW TO ADD PHOTOS OF EACH POKEMON TO DB AT SOME POINT
         {
             base.OnModelCreating(modelBuilder);
             //Details about all Pokemon at the center (Some have just recently been adopted but are still visible)

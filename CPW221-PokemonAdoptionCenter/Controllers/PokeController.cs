@@ -7,18 +7,22 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
     {
         private readonly ApplicationDbContext _context;
 
+        public PokeController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         /// <summary>
-        /// 
+        /// All Pokemon currently in the Adoption Center
         /// </summary>
         /// <returns>All Pokemon currently in the Adoption Center</returns>
         public async Task<IActionResult> AvailableMons() 
         { 
             //Get all Pokemon from the DB
-            /*List<Pokemon> adopt = await (from pokemon in _context.Pokemon
-             *                          select pokemon).ToListAsync(); //FINISH LATER*/
+            var adopt = _context.pokemons.ToList();
 
             //Show them on the page
-            return View(/*pokemon*/);
+            return View(adopt);
         }
 
         public async Task<IActionResult> AboutUs() 

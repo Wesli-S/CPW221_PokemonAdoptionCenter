@@ -6,28 +6,30 @@
 
 <h1>Our Lovely Residents</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.PokemonType)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Age)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IsAvailable)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-</table>
+<div class="container text-center">
+        <div class="row" >
+        @foreach(var item in Model)//Creates a column for each Pokemon in the database
+        {
+            string NewName = item.Name.Replace(' ', '-');
+
+            <div class="col" style="padding-bottom: 10px">
+                <img src="https://placehold.co/250"></img>
+                <div class="accordion-item" style="width: auto; margin: auto;">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#@NewName" aria-expanded="false" aria-controls="collapseOne">
+                            @item.Name
+                        </button>
+                    </h2>
+                    <div id="@NewName" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Species: @item.PokemonType</p>
+                            <p>Age: @item.Age</p>
+                            <p>@item.Description</p>
+                            <p>Available: @item.IsAvailable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        <div/>
+</div>
