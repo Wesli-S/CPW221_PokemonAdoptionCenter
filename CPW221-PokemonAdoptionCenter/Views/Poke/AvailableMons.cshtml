@@ -25,8 +25,11 @@
                             <p>Species: @item.PokemonType</p>
                             <p>Age: @item.Age</p>
                             <p>@item.Description</p>
-                            <p>Available: @item.IsAvailable</p>
                         </div>
+                        @if(item.IsAvailable == true)
+                        {
+                            <a href="@Url.Action("AdoptionSurvey", "Poke")" class="btn btn-primary">Apply for Adoption</a>
+                        }
                     </div>
                 </div>
             </div>

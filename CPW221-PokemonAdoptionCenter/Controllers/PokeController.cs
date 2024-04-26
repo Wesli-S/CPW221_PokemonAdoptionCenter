@@ -35,6 +35,12 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
         {
 
             return View();
-        }  
+        }
+
+        public async Task<IActionResult> AdoptionSurvey()
+        {
+
+            return View();
+        }
     }
 }
