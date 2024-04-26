@@ -14,7 +14,7 @@ namespace CPW221_PokemonAdoptionCenter.Models
         public int Id { get; set; }
 
         /// <summary>
-        /// The Pokemon's name
+        /// The Pokemon's given nickname
         /// </summary>
         public string Name { get; set; }
 
