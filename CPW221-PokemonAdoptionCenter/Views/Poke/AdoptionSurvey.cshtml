@@ -4,17 +4,101 @@
     ViewData["Title"] = "AdoptionSurvey";
 }
 
-<h1>Adoption Survey</h1>
-<div class="row">
-    <div class="col-md-4">
-        <form>
-        <p>This is where the survey will pop up.</p>
-            <div class="form-group">
-                <input type="submit" value="Submit" class="btn btn-primary" />
-            </div>
-        </form>
+<h2>Pokémon Adoption Questionaire</h2>
+
+<form method="post">
+    <p>
+        It is our policy to ensure that each person who adopts a pokémon is aware of the responsibilities of pet guardianship, and
+        is capable of and willing to accept those responsibilities morally, physically and financially. Not every person who desires to
+        adopt a pokémon should do so.
+        By completing this questionnaire, you will aid us in determining if you and your family are indeed ready for pet guardianship,
+        and if the pokémon of your interest would suit you and your lifestyle. Should you agree that adopting a pet is a commitment
+        throughout the lifetime of your companion animal, please fill out this questionnaire.
+    </p>
+    <div class="container">
+        <p><b>PERSONAL INFORMATION</b></p>
+        <label for="question1">Full Name:</label>
+        <input type="text" id="question1" name="question1" class="form-control" />
+
+        <label for="question2">Age:</label>
+        <div>
+            <input type="radio" id="option1" name="question2" value="Option 1">
+            <label for="option1">Under 20</label>
+        </div>
+        <div>
+            <input type="radio" id="option2" name="question2" value="Option 2">
+            <label for="option2">20-39</label>
+        </div>
+        <div>
+            <input type="radio" id="option3" name="question2" value="Option 3">
+            <label for="option2">40-59</label>
+        </div>
+        <div>
+            <input type="radio" id="option4" name="question2" value="Option 4">
+            <label for="option2">60+</label>
+        </div>
+
+        <label for="question3">Name of spouse/partner/roomate (if inapplicable write N/A):</label>
+        <input type="text" id="question3" name="question3" class="form-control" />
+
+        <label for="question4">Full Address (Street, City, Region, Zip):</label>
+        <input type="text" id="question4" name="question4" class="form-control" />
+
+        <label for="question5">Phone:</label>
+        <input type="text" id="question5" name="question5" class="form-control" />
+
+        <label for="question6">Email:</label>
+        <input type="text" id="question6" name="question6" class="form-control" />
+
+        <label for="question7">Occupation</label>
+        <input type="text" id="question7" name="question7" class="form-control" />
+
+        <label for="question8">Work Schedule:</label>
+        <input type="text" id="question8" name="question8" class="form-control" />
+
+        <label for="question9">Would you be permitted to bring your pokémon into work with you?</label>
+        <div>
+            <input type="radio" id="option1" name="question9" value="Option 1">
+            <label for="option1">Yes</label>
+        </div>
+        <div>
+            <input type="radio" id="option2" name="question9" value="Option 2">
+            <label for="option2">No</label>
+        </div>
+
+        <label for="question10">Names of all persons living in your household, their relationship to you and their ages:</label>
+        <input type="text" id="question10" name="question10" class="form-control" />
+        <input type="text" id="question10" name="question10" class="form-control" />
+        <input type="text" id="question10" name="question10" class="form-control" />
+        <input type="text" id="question10" name="question10" class="form-control" />
+
+        <label for="question11">Please list two personal references and their relationship to you:</label>
+        <input type="text" id="question11" name="question11" class="form-control" />
+        <input type="text" id="question11" name="question11" class="form-control" />
     </div>
-</div>
+    <br />
+    <div class="container">
+        <p><b>YOUR HOME</b></p>
+        <label for="question1">Type of dwelling:</label>
+        <div>
+            <input type="radio" id="option1" name="question1" value="Option 1">
+            <label for="option1">House</label>
+        </div>
+        <div>
+            <input type="radio" id="option2" name="question1" value="Option 2">
+            <label for="option2">Apartment</label>
+        </div>
+        <div>
+            <input type="radio" id="option3" name="question1" value="Option 3">
+            <label for="option2">Condo</label>
+        </div>
+        <p>Other:</p><input type="text" id="question1" name="question11" class="form-control" />
+
+
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
 <div>
     <a asp-action="Index">Home</a>
