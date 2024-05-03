@@ -1,4 +1,5 @@
 ﻿using CPW221_PokemonAdoptionCenter.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CPW221_PokemonAdoptionCenter.Controllers
@@ -37,6 +38,7 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
             return View();
         }
 
+        [Authorize]
         public async Task<IActionResult> AdoptionSurvey()
         {
 
