@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/CPW221-PokemonAdoptionCenter20240508111323/providers/Microsoft.ServiceLinker/linkers/ConnectionStringsDefaultConnection_F3557E27DA",
+      "secretStore": "AzureAppSettings",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/cpw221-pokemonadoptioncenterdbserver/databases/CPW221-PokemonAdoptionCenter_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:DefaultConnection",
+      "dynamicId": null
+    }
+  }
+}
