@@ -24,6 +24,11 @@ namespace CPW221_PokemonAdoptionCenter.Models
         public string PokemonType { get; set; }
 
         /// <summary>
+        /// The pokemon type (grass, water, fire, ect)
+        /// </summary>
+        public string BattleType { get; set; }
+
+        /// <summary>
         /// The Pokemon's current age
         /// </summary>
         public int Age { get; set; }
