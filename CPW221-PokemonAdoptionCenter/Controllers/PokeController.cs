@@ -1,6 +1,9 @@
 ﻿using CPW221_PokemonAdoptionCenter.Data;
+using CPW221_PokemonAdoptionCenter.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 
 namespace CPW221_PokemonAdoptionCenter.Controllers
 {
@@ -47,7 +50,9 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
 
         public async Task<IActionResult> YourMon()
         {
-            return View();
+            var pokemon = await _context.pokemons.FromSqlRaw("SELECT TOP 1 * FROM pokemons ORDER BY NEWID()").FirstOrDefaultAsync();
+
+            return View(pokemon);
         }
     }
 }
