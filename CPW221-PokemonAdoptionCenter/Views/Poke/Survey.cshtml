@@ -27,15 +27,16 @@
         document.getElementById('submitSurvey').disabled = !allAnswered;
     }
 </script>
-<h1>Pickamon Survey</h1>
+<h1>Pick-a-mon Survey</h1>
 
 <p>Not sure what kind of pokémon you'd like? We don't blame you! There's such a wide variety of these wonderful 
     creatures it's so hard to choose! Not to worry though, because with this short survey, we can help you narrow 
-    down our current group pokémon to find your potential new best friend! We just need to know a bit ABOUT you so we 
+    down our current group of pokémon to find your potential new best friend! We just need to know a bit ABOUT you so we 
     can find the right companion FOR you. Let's get started!:</p>
+<!--Question 1-->
 <div class="question">
-    <!--Question 1-->
-    <label for="question1"><b>What type of pokémon would you be open to having? (DISCLAIMER: We may not have any pokémon of the type you specify here. Just keep an open mind.)</b></label>
+    
+    <label for="question1"><b>1. What type of pokémon would you be open to having? (DISCLAIMER: We may not have any pokémon of the type you specify here. Just keep an open mind.)</b></label>
     <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
         <label class="form-check-label" for="defaultCheck1">
@@ -151,9 +152,11 @@
         </label>
     </div>
 </div>
+<br />
+<!--Question 2-->
 <div class="question">
-    <!--Question 2-->
-    <label for="question2"><b>Are you looking for a pokémon to be a:</b></label>
+    
+    <label for="question2"><b>2. Are you looking for a pokémon to be a:</b></label>
     <div>
         <input type="radio" id="option1" name="question2" value="Option 1" onclick="checkIfAllAnswered()">
         <label for="option1">Fighter</label>
@@ -176,9 +179,10 @@
         <input type="text" id="question2" name="question2" class="form-control" />
     </div>
 </div>
+<br />
+<!--Question 3-->
 <div class="question">
-    <!--Question 3-->
-    <label for="question3">Would you prefer a younger or older pokémon?</label>
+    <label for="question3"><b>3. Would you prefer a younger or older pokémon?</b></label>
     <div>
         <input type="radio" id="option1" name="question3" value="Option 1" onclick="checkIfAllAnswered()">
         <label for="option1">Younger(1-20)</label>
@@ -192,9 +196,10 @@
         <label for="option3">No preference</label>
     </div>
 </div>
+<br />
 <!--Question 4-->
 <div class="question">
-    <label for="question4">Would you mind if the pokémon had a previous owner?</label>
+    <label for="question4"><b>4. Would you mind if the pokémon had a previous owner?</b></label>
     <div>
         <input type="radio" id="option1" name="question4" value="Option 1" onclick="checkIfAllAnswered()">
         <label for="option1">Yes</label>
@@ -204,10 +209,10 @@
         <label for="option2">No</label>
     </div>
 </div>
-
+<br />
 <!--Question 5-->
 <div class="question">
-    <label for="question5">How much time can you spend exercising your pokémon (including walking, running & playing)?</label>
+    <label for="question5"><b>5. How much time can you spend exercising your pokémon (including walking, running & playing)?</b></label>
     <div>
         <input type="radio" id="option1" name="question5" value="Option 1" onclick="checkIfAllAnswered()">
         <label for="option1">At least 60 minutes or more per day</label>
@@ -225,10 +230,119 @@
         <label for="option4">I'm unable to take my pokémon out for exercise/play every day</label>
     </div>
 </div>
+<br />
 <!--Question 6-->
-<div>
-
-
+<div class="question">
+    <label for="question6"><b>6. Would you be willing to train your pokémon if need be?</b></label>
+    <div>
+        <input type="radio" id="option1" name="question6" value="Option 1" onclick="checkIfAllAnswered()">
+        <label for="option1">Yes</label>
+    </div>
+    <div>
+        <input type="radio" id="option2" name="question6" value="Option 2" onclick="checkIfAllAnswered()">
+        <label for="option2">No</label>
+    </div>
+    <div>
+        <input type="radio" id="option3" name="question6" value="Option 3" onclick="checkIfAllAnswered()">
+        <label for="option2">I'm unable to train my pokémon. I will hire a trainer.</label>
+    </div>
+    <div>
+        <input type="radio" id="option4" name="question6" value="Option 4" onclick="checkIfAllAnswered()">
+        <label for="option4">I'd prefer if the pokémon didn't require training.</label>
+    </div>
 </div>
-
+<br />
+<!--Question 7-->
+<div class="question">
+    <label for="question7"><b>7. What does your pokémon budget look like?</b></label>
+    <div>
+        <input type="radio" id="option1" name="question7" value="Option 1" onclick="checkIfAllAnswered()">
+        <label for="option1">Pretty good, but I’d like to avoid any major expenses.</label>
+    </div>
+    <div>
+        <input type="radio" id="option2" name="question7" value="Option 2" onclick="checkIfAllAnswered()">
+        <label for="option2">After the initial costs for a habitat and supplies, I’d like to spend very little.</label>
+    </div>
+    <div>
+        <input type="radio" id="option3" name="question7" value="Option 3" onclick="checkIfAllAnswered()">
+        <label for="option2">Basic. I can afford start-up supplies and inexpensive recurring costs.</label>
+    </div>
+    <div>
+        <input type="radio" id="option4" name="question7" value="Option 4" onclick="checkIfAllAnswered()">
+        <label for="option4">Generous. In addition to budgeting for the basics, I plan to have an emergency</label>
+        <label for="option4">fund set aside.</label>
+    </div>
+    <div>
+        <input type="radio" id="option5" name="question7" value="Option 4" onclick="checkIfAllAnswered()">
+        <label for="option4">Healthy. I can afford both routine and unexpected costs, if necessary.</label>
+    </div>
+</div>
+<br />
+<!--Question 8-->
+<div class="question">
+    <label for="question8"><b>8. How much cleaning are you willing to do?</b></label>
+    <div>
+        <input type="radio" id="option1" name="question8" value="Option 1" onclick="checkIfAllAnswered()">
+        <label for="option1">Habitat maintenance is fine, but anything beyond that is a deal breaker.</label>
+    </div>
+    <div>
+        <input type="radio" id="option2" name="question8" value="Option 2" onclick="checkIfAllAnswered()">
+        <label for="option2">As long as most of the mess remains in a pokéball, I don’t mind.</label>
+    </div>
+    <div>
+        <input type="radio" id="option3" name="question8" value="Option 3" onclick="checkIfAllAnswered()">
+        <label for="option2">I’m OK with muddy paws and the occasional chewed up cushion.</label>
+    </div>
+    <div>
+        <input type="radio" id="option4" name="question8" value="Option 4" onclick="checkIfAllAnswered()">
+        <label for="option4">I’ve been called a neat freak, and I’m looking for a similar pet.</label>
+    </div>
+    <div>
+        <input type="radio" id="option5" name="question8" value="Option 4" onclick="checkIfAllAnswered()">
+        <label for="option4">The occasional spill or shedding won’t bother me.</label>
+    </div>
+</div>
+<br />
+<!--Question 9-->
+<div class="question">
+    <label for="question9"><b>9. How long do you think you'll want a pokémon?</b></label>
+    <div>
+        <input type="radio" id="option1" name="question9" value="Option 1" onclick="checkIfAllAnswered()">
+        <label for="option1">Around 10 years or so.</label>
+    </div>
+    <div>
+        <input type="radio" id="option2" name="question9" value="Option 2" onclick="checkIfAllAnswered()">
+        <label for="option2">Over 20 years.</label>
+    </div>
+    <div>
+        <input type="radio" id="option3" name="question9" value="Option 3" onclick="checkIfAllAnswered()">
+        <label for="option2">Over 50+ years.</label>
+    </div>
+    <div>
+        <input type="radio" id="option4" name="question9" value="Option 4" onclick="checkIfAllAnswered()">
+        <label for="option4">I don't mind if the pokémon outlives me.</label>
+    </div>
+</div>
+<br />
+<!--Question 10-->
+<div class="question">
+    <label for="question8"><b>10. What would you do if you found you could no longer care for the pokémon?</b></label>
+    <div>
+        <input type="radio" id="option1" name="question10" value="Option 1" onclick="checkIfAllAnswered()">
+        <label for="option1">I would return it to the adoption center.</label>
+    </div>
+    <div>
+        <input type="radio" id="option2" name="question10" value="Option 2" onclick="checkIfAllAnswered()">
+        <label for="option2">I'd find someone to take the pokémon in. Likely a friend/family member</label>
+    </div>
+    <div>
+        <input type="radio" id="option3" name="question10" value="Option 3" onclick="checkIfAllAnswered()">
+        <label for="option2">I would hire someone to help with care.</label>
+    </div>
+    <div>
+        <input type="radio" id="option4" name="question10" value="Option 4" onclick="checkIfAllAnswered()">
+        <label for="option4">I'd release the pokémon into the wild.</label>
+    </div>
+</div>
+<br />
 <a href="@Url.Action("YourMon", "Poke")" class="btn btn-primary" id="submitSurvey">Submit Survey</a>
