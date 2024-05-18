@@ -50,7 +50,10 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
 
         public async Task<IActionResult> YourMon()
         {
-            var pokemon = await _context.pokemons.FromSqlRaw("SELECT TOP 1 * FROM pokemons ORDER BY NEWID()").FirstOrDefaultAsync();
+            //Only available pokemon will be displayed
+            var pokemon = await _context.pokemons
+                 .FromSqlRaw("SELECT TOP 1 * FROM pokemons WHERE IsAvailable = 1 ORDER BY NEWID()")
+                     .FirstOrDefaultAsync();
 
             return View(pokemon);
         }
