@@ -57,5 +57,10 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
 
             return View(pokemon);
         }
+
+        public async Task<IActionResult> TYForSubmitting()
+        {
+            return View();
+        }
     }
 }
