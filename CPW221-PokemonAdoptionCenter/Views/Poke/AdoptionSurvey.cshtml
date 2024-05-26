@@ -130,7 +130,11 @@
                 <input type="radio" id="option3" name="question1" value="Option 3" required>
                 <label for="option3">Condo</label>
             </div>
-            <p>Other:</p><input type="text" id="question1" name="question1" class="form-control" required />
+            <div>
+                <input type="radio" id="option4" name="question1" value="Option 4" required>
+                <label for="option4">Other</label>
+                <input type="text" id="question1" name="question1" class="form-control" required />
+            </div>
         </div>
         <br />
         <!--Question 2-->
@@ -343,219 +347,232 @@
 
     <p><b>YOUR NEW POKEMON</b></p>
     <div class="container">
-        <!--Question 1-->
-        <div class="question">
-            <label for="question1">Who would be responsible for the care of the pokémon?:</label>
-            <input type="text" id="question1" name="question1" class="form-control" required />
-        </div>
-        <br />
-        <!--Question 2-->
-        <div class="question">
-            <label for="question2">What's your primary reason for adopting a pokémon?:</label>
-            <div>
-                <input type="radio" id="option1" name="question2" value="Option 1" required>
-                <label for="option1">Companion</label>
+            <!--Question 1-->
+            <div class="question">
+                <label for="question1">Who would be responsible for the care of the pokémon?:</label>
+                <input type="text" id="question1" name="question1" class="form-control" required />
             </div>
-            <div>
-                <input type="radio" id="option2" name="question2" value="Option 2" required>
-                <label for="option2">Guard pokémon</label>
+            <br />
+            <!--Question 2-->
+            <div class="question">
+                <label for="question2">What's your primary reason for adopting a pokémon?:</label>
+                <div>
+                    <input type="radio" id="option1" name="question2" value="Option 1" required>
+                    <label for="option1">Companion</label>
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="question2" value="Option 2" required>
+                    <label for="option2">Guard pokémon</label>
+                </div>
+                <div>
+                    <input type="radio" id="option3" name="question2" value="Option 3" required>
+                    <label for="option3">Training</label>
+                </div>
+                <div>
+                    <input type="radio" id="option4" name="question2" value="Option 4" required>
+                    <label for="option4">Other</label>
+                </div>
             </div>
-            <div>
-                <input type="radio" id="option3" name="question2" value="Option 3" required>
-                <label for="option3">Training</label>
+            <br />
+            <!--Question 3-->
+            <div class="question">
+                <label for="question3">Where would the pokémon sleep?:</label>
+                <div>
+                    <input type="radio" id="option1" name="question3" value="Option 1" required>
+                    <label for="option1">Inside</label>
+                    <input type="text" id="question3" name="question3" class="form-control" />
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="question3" value="Option 2" required>
+                    <label for="option2">Outside</label>
+                    <input type="text" id="question3" name="question3" class="form-control" />
+                </div>
             </div>
-            <div>
-                <input type="radio" id="option4" name="question2" value="Option 4" required>
-                <label for="option4">Other</label>
+            <br />
+            <!--Question 4-->
+            <div class="question">
+                <label for="question4">How many hours would the pokémon be left alone?:</label>
+                <input type="text" id="question4" name="question4" class="form-control" />
             </div>
-        </div>
-        <br />
-        <!--Question 3-->
-        <div class="question">
-            <label for="question3">Where would the pokémon sleep?:</label>
-            <div>
-                <input type="radio" id="option1" name="question3" value="Option 1" required>
-                <label for="option1">Inside</label>
-                <input type="text" id="question3" name="question3" class="form-control" />
+            <br />
+            <!--Question 5-->
+            <div class="question">
+                <label for="question5">Where would the pokémon be left when alone?:</label>
+                <div>
+                    <input type="radio" id="option1" name="question5" value="Option 1" required>
+                    <label for="option1">Inside</label>
+                    <p>where inside?</p>
+                    <input type="text" id="question5" name="question5" class="form-control" />
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="question5" value="Option 2" required>
+                    <label for="option2">Outside</label>
+                    <p>where outside?</p>
+                    <input type="text" id="question5" name="question5" class="form-control" required />
+                </div>
             </div>
-            <div>
-                <input type="radio" id="option2" name="question3" value="Option 2" required>
-                <label for="option2">Outside</label>
-                <input type="text" id="question3" name="question3" class="form-control" />
+            <br />
+            <!--Question 6-->
+            <div class="question">
+                <label for="question6">Which rooms or areas of the home/yard will be off-limits to the pokémon?:</label>
+                <div>
+                    <input type="text" id="question6" name="question6" class="form-control" required />
+                </div>
             </div>
-        </div>
-        <br />
-        <!--Question 4-->
-        <div class="question">
-            <label for="question4">How many hours would the pokémon be left alone?:</label>
-            <input type="text" id="question4" name="question4" class="form-control" />
-        </div>
-        <br />
-        <!--Question 5-->
-        <div class="question">
-            <label for="question5">Where would the pokémon be left when alone?:</label>
-            <div>
-                <input type="radio" id="option1" name="question5" value="Option 1" required>
-                <label for="option1">Inside</label>
-                <p>where inside?</p>
-                <input type="text" id="question5" name="question5" class="form-control" />
+            <br />
+            <!--Question 7-->
+            <div class="question">
+                <label for="question7">What outside space is available for the pokémon?:</label>
+                <div>
+                    <input type="text" id="question7" name="question7" class="form-control" required />
+                </div>
             </div>
-            <div>
-                <input type="radio" id="option2" name="question5" value="Option 2" required>
-                <label for="option2">Outside</label>
-                <p>where outside?</p>
-                <input type="text" id="question5" name="question5" class="form-control" required />
+            <br />
+            <!--Question 8-->
+            <div class="question">
+                <label for="question8">How do you plan to handle the pokémon's exercise needs?:</label>
+                <div>
+                    <input type="text" id="question8" name="question8" class="form-control" required />
+                </div>
             </div>
-        </div>
-        <br />
-        <!--Question 6-->
-        <div class="question">
-            <label for="question6">Which rooms or areas of the home/yard will be off-limits to the pokémon?:</label>
-            <div>
-                <input type="text" id="question6" name="question6" class="form-control" required />
+            <br />
+            <!--Question 9-->
+            <div class="question">
+                <label for="question9">If necessary, would you be willing to attend obedience classes at your own expense?:</label>
+                <div>
+                    <input type="radio" id="option1" name="question9" value="Option 1" required>
+                    <label for="option1">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="question9" value="Option 2" required>
+                    <label for="option2">No</label>
+                </div>
             </div>
-        </div>
-        <br />
-        <!--Question 7-->
-        <div class="question">
-            <label for="question7">What outside space is available for the pokémon?:</label>
-            <div>
-                <input type="text" id="question7" name="question7" class="form-control" required />
+            <br />
+            <!--Question 10-->
+            <div class="question">
+                <label for="question10">Do you travel a lot?</label>
+                <div>
+                    <input type="radio" id="option1" name="question10" value="Option 1" required>
+                    <label for="option1">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="question10" value="Option 2" required>
+                    <label for="option2">No</label>
+                </div>
             </div>
-        </div>
-        <br />
-        <!--Question 8-->
-        <div class="question">
-            <label for="question8">How do you plan to handle the pokémon's exercise needs?:</label>
-            <div>
-                <input type="text" id="question8" name="question8" class="form-control" required />
+            <br />
+            <div class="question">
+                <label for="question10">If so, do you intend to bring the pokémon with you when you travel?</label>
+                <div>
+                    <input type="radio" id="option1" name="question10" value="Option 1" required>
+                    <label for="option1">Yes</label>
+                </div>
+                <div>
+                    <input type="radio" id="option2" name="question10" value="Option 2" required>
+                    <label for="option2">No</label>
+                </div>
             </div>
-        </div>
-        <br />
-        <!--Question 9-->
-        <div class="question">
-            <label for="question9">If necessary, would you be willing to attend obedience classes at your own expense?:</label>
-            <div>
-                <input type="radio" id="option1" name="question9" value="Option 1" required>
-                <label for="option1">Yes</label>
+            <br />
+            <!--Question 11-->
+            <div class="question">
+                <label for="question11">If not, where do you intend to leave the pokémon?:</label>
+                <div>
+                    <input type="text" id="question11" name="question11" class="form-control" required />
+                </div>
             </div>
-            <div>
-                <input type="radio" id="option2" name="question9" value="Option 2" required>
-                <label for="option2">No</label>
-            </div>
-        </div>
-        <br />
-        <!--Question 10-->
-        <div class="question">
-            <label for="question10">Do you travel a lot?</label>
-            <div>
-                <input type="radio" id="option1" name="question10" value="Option 1" required>
-                <label for="option1">Yes</label>
-            </div>
-            <div>
-                <input type="radio" id="option2" name="question10" value="Option 2" required>
-                <label for="option2">No</label>
-            </div>
-        </div>
-        <br />
-        <div class="question">
-            <label for="question10">If so, do you intend to bring the pokémon with you when you travel?</label>
-            <div>
-                <input type="radio" id="option1" name="question10" value="Option 1" required>
-                <label for="option1">Yes</label>
-            </div>
-            <div>
-                <input type="radio" id="option2" name="question10" value="Option 2" required>
-                <label for="option2">No</label>
-            </div>
-        </div>
-        <br />
-        <!--Question 11-->
-        <div class="question">
-            <label for="question11">If not, where do you intend to leave the pokémon?:</label>
-            <div>
-                <input type="text" id="question11" name="question11" class="form-control" required />
-            </div>
-        </div>
-        <br />
-        <!--Question 12-->
-        <div class="question">
-            <label for="question12">Under what circumstances would you not keep the pokémon?</label>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">
-                    Divorce
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                <label class="form-check-label" for="defaultCheck2">
-                    Illness in family
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                <label class="form-check-label" for="defaultCheck3">
-                    Moving
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                <label class="form-check-label" for="defaultCheck4">
-                    New baby
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-                <label class="form-check-label" for="defaultCheck5">
-                    New job
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
-                <label class="form-check-label" for="defaultCheck6">
-                    Chewing
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
-                <label class="form-check-label" for="defaultCheck7">
-                    Noise
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
-                <label class="form-check-label" for="defaultCheck8">
-                    Damage
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
-                <label class="form-check-label" for="defaultCheck9">
-                    Allergys
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
-                <label class="form-check-label" for="defaultCheck10">
-                    Too large
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
-                <label class="form-check-label" for="defaultCheck11">
-                    Pokémon is difficult to care for
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
-                <label class="form-check-label" for="defaultCheck12">
-                    Doesn't get along with other pokémon
-                </label>
-            </div>
+            <br />
+            <!--Question 12-->
+            <div class="question">
+                <label for="question12">Under what circumstances would you not keep the pokémon?</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Divorce
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                        Illness in family
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck3">
+                        Moving
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+                    <label class="form-check-label" for="defaultCheck4">
+                        New baby
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+                    <label class="form-check-label" for="defaultCheck5">
+                        New job
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+                    <label class="form-check-label" for="defaultCheck6">
+                        Chewing
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+                    <label class="form-check-label" for="defaultCheck7">
+                        Noise
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
+                    <label class="form-check-label" for="defaultCheck8">
+                        Damage
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
+                    <label class="form-check-label" for="defaultCheck9">
+                        Allergys
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
+                    <label class="form-check-label" for="defaultCheck10">
+                        Too large
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
+                    <label class="form-check-label" for="defaultCheck11">
+                        Pokémon is difficult to care for
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
+                    <label class="form-check-label" for="defaultCheck12">
+                        Doesn't get along with other pokémon
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
+                    <label class="form-check-label" for="defaultCheck14">
+                        Other
+                    </label>
+                </div><div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
+                    <label class="form-check-label" for="defaultCheck14">
+                        Nothing 
+                    </label>
+                </div>
 
+        </div>
+        <br />
     </div>
-    <br />
+
 
     <!--WRAP UP QUESTIONS-->
     <label for="question1">Is there anything else you'd like to tell us about yourself?:</label>
