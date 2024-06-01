@@ -1,6 +1,191 @@
 ﻿@{
-    ViewData["Title"] = "Volunteer";
+    ViewData["Title"] = "Volunteer Survey";
 }
 <h1>@ViewData["Title"]</h1>
 
-<p>This page will detail info for people who wish to work/volunteer at this establishment. They'll be able to apply via a survey [TO BE ADDED LATER]</p>
+<form method="post" asp-controller="Poke" asp-action="TYForSubmitting">
+    <p>
+        Thank you for your interest in volunteering with 'I Choose You! Pokémon Adoption Center'. 
+        We're looking for volunteers who are respectful, cooperative, punctual and comfortable around both people and pokémon alike.
+        You must be 16 years or older to volunteer with I.C.Y.
+    </p>
+    <p><b>BASIC INFORMATION</b></p>
+    <div class="container">
+        <!--Question 1-->
+        <div class="question">
+            <label for="question1">Full Name:</label>
+            <input type="text" id="question1" name="question1" class="form-control" required />
+        </div>
+        <br />
+        <!--Question 2-->
+        <div class="question">
+            <label for="question2">Phone:</label>
+            <input type="tel" id="question2" name="question2" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+            <small>(Format: 123-456-7890)</small>
+        </div>
+        <br />
+        <!--Question 3-->
+        <div class="question">
+            <label for="question3">Email:</label>
+            <input type="email" id="question3" name="question3" class="form-control" required />
+        </div>
+        <br />
+        <!--Question 4-->
+        <div class="question">
+            <label for="question4">Please confirm you are over 16 years of age</label>
+            <div>
+                <input type="radio" id="option1" name="question4" value="Option 1" required>
+                <label for="option1">I am over 16</label>
+            </div>
+        </div>
+        <br />
+        <!--Question 5-->
+        <div class="question">
+            <label for="question5">How did you hear about I.C.Y.?</label>
+            <div>
+                <input type="radio" id="option1" name="question5" value="Option 1" required>
+                <label for="option1">Social Media</label>
+            </div>
+            <div>
+                <input type="radio" id="option2" name="question5" value="Option 2" required>
+                <label for="option2">Flyer</label>
+            </div>
+            <div>
+                <input type="radio" id="option3" name="question5" value="Option 3" required>
+                <label for="option3">Friend/Family Member</label>
+            </div>
+            <div>
+                <input type="radio" id="option4" name="question5" value="Option 4" required>
+                <label for="option4">Event</label>
+            </div>
+            <div>
+                <input type="radio" id="option5" name="question5" value="Option 5" required>
+                <label for="option5">Other</label>
+            </div>
+        </div>
+        <br />
+        <!--Question 6-->
+        <div class="question">
+            <label for="question6">What made you interested in volunteering with I.C.Y.?:</label>
+            <input type="text" id="question6" name="question6" class="form-control" />
+        </div>
+        <br />
+        <!--Question 7-->
+        <div class="question">
+            <label for="question7">If you have a mode of transportation, would you be willing to assist with transporting supplies within the Hoenn Region?:</label>
+            <div>
+                <input type="radio" id="option1" name="question7" value="Option 1" required>
+                <label for="option1">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="option2" name="question7" value="Option 2" required>
+                <label for="option2">No</label>
+            </div>
+            <div>
+                <input type="radio" id="option3" name="question7" value="Option 3" required>
+                <label for="option3">N/A</label>
+            </div>
+        </div>
+        <br />
+        <!--Question 8-->
+        <div class="question">
+            <label for="question8">Are you able to commit 6-12 months as a volunteer?:</label>
+            <div>
+                <input type="radio" id="option1" name="question8" value="Option 1" required>
+                <label for="option1">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="option2" name="question8" value="Option 2" required>
+                <label for="option2">No</label>
+            </div>
+        </div>
+        <br />
+        <!--Question 9-->
+        <div class="question">
+            <label for="question9">Have you ever volunteered or worked with pokémon in the past?:</label>
+            <div>
+                <input type="radio" id="option1" name="question9" value="Option 1" required>
+                <label for="option1">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="option2" name="question9" value="Option 2" required>
+                <label for="option2">No</label>
+            </div>
+        </div>
+        <br />
+        <!--Question 10-->
+        <div class="question">
+            <label for="question10">What is your comfort/skill level with pokémon?:</label>
+            <div>
+                <input type="radio" id="option1" name="question10" value="Option 1" required>
+                <label for="option1">Highly comfortable with pokémon of all sizes and energy levels</label>
+            </div>
+            <div>
+                <input type="radio" id="option2" name="question10" value="Option 2" required>
+                <label for="option2">Comfortable and prefer low energy, smaller pokémon</label>
+            </div>
+            <div>
+                <input type="radio" id="option3" name="question10" value="Option 3" required>
+                <label for="option3">Less comfortable, new to pokémon but willing to learn</label>
+            </div>
+            <div>
+                <input type="radio" id="option4" name="question10" value="Option 4" required>
+                <label for="option4">Not comfortable with pokémon</label>
+            </div>
+        </div>
+        <br />
+    </div>
+    <br />
+
+    <p><b>PERSONSL REFERENCES</b></p>
+    <div class="container">
+        <!--Reference #1-->
+        <div>
+            <p>Personal reference #1 (required)</p>
+            <div class="question">
+                <label for="question1">Full Name:</label>
+                <input type="text" id="question1" name="question1" class="form-control" required />
+            </div>
+            <br />
+            <div class="question">
+                <label for="question2">Phone:</label>
+                <input type="tel" id="question2" name="question2" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <small>(Format: 123-456-7890)</small>
+            </div>
+            <br />
+            <div class="question">
+                <label for="question3">Relation to you:</label>
+                <input type="text" id="question3" name="question3" class="form-control" required />
+            </div>
+            <br />
+        </div>
+        <br />
+        <!--Reference #2-->
+        <div>
+            <p>Personal reference #2 (required)</p>
+            <div class="question">
+                <label for="question1">Full Name:</label>
+                <input type="text" id="question1" name="question1" class="form-control" required />
+            </div>
+            <br />
+            <div class="question">
+                <label for="question2">Phone:</label>
+                <input type="tel" id="question2" name="question2" class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                <small>(Format: 123-456-7890)</small>
+            </div>
+            <br />
+            <div class="question">
+                <label for="question3">Relation to you:</label>
+                <input type="text" id="question3" name="question3" class="form-control" required />
+            </div>
+            <br />
+        </div>
+
+    </div>
+
+    <input type="submit" value="Submit">
+</form>
+
+<div>
+    <a asp-action="Index">Home</a>
+</div>
