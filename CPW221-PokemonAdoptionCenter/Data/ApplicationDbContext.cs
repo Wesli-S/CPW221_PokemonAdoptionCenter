@@ -26,7 +26,7 @@ namespace CPW221_PokemonAdoptionCenter.Data
 
                 new Pokemon {Id = 4, Name = "Captain Sushi", PokemonType = "Galarian Meowth", BattleType = "Steel", Age = 10, Description = "This Pokémon has been chosen! Best of luck, buddy!", IsAvailable = false },
 
-                new Pokemon {Id = 5, Name = "Cleo", PokemonType = "Azumarill", BattleType = "Fairy/Water", Age = 8, Description = "Cleo is one of the most bubbly Pokémon we've ever met (both figuratively and literally) She was dropped off by her pervious owner who could no longer care for her.", IsAvailable = true}, 
+                new Pokemon {Id = 5, Name = "Cleo", PokemonType = "Azumarill", BattleType = "Fairy/Water", Age = 8, Description = "Cleo is one of the most bubbly Pokémon we've ever met (both figuratively and literally) She was dropped off by her previous owner who could no longer care for her.", IsAvailable = true}, 
 
                 new Pokemon {Id = 6, Name = "Chompee", PokemonType = "Mareanie", BattleType = "Poison/Water", Age = 5, Description = "Found tangled in beach debris. When she refused to return to the sea, she was brought to us to find a home. Chompee is incredibly affectionate and adores physical contact. Just watch out for those spikes, as they may hurt.", IsAvailable = true},
 
