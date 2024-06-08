@@ -222,7 +222,8 @@
     </div>
     <br />
 
-    <p><b>YOUR COMPANION POKEMON</b></p>
+    <p><b>YOUR COMPANION POKÉMON</b></p>
+    <p><b>(this section is only required if you currently have any other pokémon living in your home)</b></p>
     <div class="container">
         <!--Question 1-->
         <div class="question">
@@ -239,8 +240,8 @@
         <br />
         <!--Question 2-->
         <div class="question">
-            <label for="question2">CURRENT POKEMON:</label>
-            <table class="table">
+            <table id="interactiveTable">
+                <label for="question2">CURRENT POKÉMON:</label>
                 <thead>
                     <tr>
                         <th scope="col">Breed</th>
@@ -252,31 +253,28 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="text" id="breed" size="10"></td>
+                        <td><input type="text" id="age" size="10"></td>
+                        <td><input type="text" id="sex" size="10"></td>
+                        <td><input type="text" id="altered" size="10"></td>
+                        <td><input type="text" id="obtainedHow" size="10"></td>
                     </tr>
                     <tr>
-                        <th scope="row">2</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="text" id="breed" size="10"></td>
+                        <td><input type="text" id="age" size="10"></td>
+                        <td><input type="text" id="sex" size="10"></td>
+                        <td><input type="text" id="altered" size="10"></td>
+                        <td><input type="text" id="obtainedHow" size="10"></td>
                     </tr>
                     <tr>
-                        <th scope="row">3</th>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><input type="text" id="breed" size="10"></td>
+                        <td><input type="text" id="age" size="10"></td>
+                        <td><input type="text" id="sex" size="10"></td>
+                        <td><input type="text" id="altered" size="10"></td>
+                        <td><input type="text" id="obtainedHow" size="10"></td>
                     </tr>
                 </tbody>
-            </table> [ADD INTERACTION LATER]<br />
+            </table><br />
         </div>
         <br />
         <!--Question 3-->
@@ -345,7 +343,7 @@
     </div>
     <br />
 
-    <p><b>YOUR NEW POKEMON</b></p>
+    <p><b>YOUR NEW POKÉMON</b></p>
     <div class="container">
             <!--Question 1-->
             <div class="question">
