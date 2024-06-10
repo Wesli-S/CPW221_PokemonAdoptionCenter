@@ -10,7 +10,7 @@
         <div class="row" >
         @foreach(var item in Model)//Creates a column for each Pokemon in the database
         {
-            string NewName = item.Name.Replace(' ', '-');
+            string NewName = item.Name.Replace(' ', '-');//replaces all spaces with a '-' to avoid confusing the computer
 
             <div class="col" style="padding-bottom: 10px">
                 <img src="https://placehold.co/250"></img>
