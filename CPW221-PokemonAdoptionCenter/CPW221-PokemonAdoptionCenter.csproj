@@ -21,6 +21,8 @@
 
   <ItemGroup>
     <None Include="wwwroot\css\Pokemon GB.ttf" />
+    <None Include="wwwroot\images\ICY-Apollo%28Sylveon%29.jpg" />
+    <None Include="wwwroot\images\Placeholder.png" />
   </ItemGroup>
 
   <ItemGroup>

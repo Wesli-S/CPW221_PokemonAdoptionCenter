@@ -44,5 +44,11 @@ namespace CPW221_PokemonAdoptionCenter.Models
         public bool IsAvailable { get; set; }
 
 
+        /// <summary>
+        /// Image of a specific pokemon
+        /// </summary>
+        public string ImageOfPokemon {  get; set; }
     }
+
+    
 }

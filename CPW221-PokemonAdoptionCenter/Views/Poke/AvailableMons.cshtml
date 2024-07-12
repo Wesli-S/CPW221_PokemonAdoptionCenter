@@ -13,8 +13,8 @@
             string NewName = item.Name.Replace(' ', '-');//replaces all spaces with a '-' to avoid confusing the computer
 
             <div class="col" style="padding-bottom: 10px">
-                <img src="https://placehold.co/250"></img>
-                <div class="accordion-item" style="width: auto; margin: auto;">
+                <img src="@item.ImageOfPokemon" alt="@item.Name" style="width:300px; height:300px;" />
+                <div class="accordion-item" style="width: 300px; margin: auto;">
                     <h2 class="accordion-header">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#@NewName" aria-expanded="false" aria-controls="collapseOne">
                             @item.Name
