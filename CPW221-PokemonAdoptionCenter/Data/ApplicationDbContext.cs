@@ -23,6 +23,7 @@ namespace CPW221_PokemonAdoptionCenter.Data
 
                 new Pokemon {Id = 2, Name = "Kinito", PokemonType = "Paldean Wooper", BattleType = "Poison/Ground", Age = 4, Description = "Coming all the way from the Paldea region, Kinito has a naturally upbeat personality. Kinito enjoys swimming, splashing in puddles, and long afternoon naps.", IsAvailable = true, ImageOfPokemon = "/images/Placeholder.png" },
 
+
                 new Pokemon {Id = 3, Name = "Apollo", PokemonType = "Sylveon (Shiny)", BattleType = "Fairy", Age = 7, Description = "Apollo was dropped off at our center by his owner who was 'displeased' about Apollo's evolutionary choices. Nevertheless, Apollo continues to be incredibly affectionate and loving.", IsAvailable = true, ImageOfPokemon = "/images/ICY-Apollo(Sylveon).jpg" },
 
                 new Pokemon {Id = 4, Name = "Captain Sushi", PokemonType = "Galarian Meowth", BattleType = "Steel", Age = 10, Description = "This Pokémon has been chosen! Best of luck, buddy!", IsAvailable = false, ImageOfPokemon = "/images/Placeholder.png" },
