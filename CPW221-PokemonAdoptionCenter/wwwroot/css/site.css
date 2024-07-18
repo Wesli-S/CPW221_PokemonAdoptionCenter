@@ -4,7 +4,9 @@
 }
 
 html {
-  font-size: 14px;
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -21,10 +23,6 @@ html {
     background: rgba(0, 0, 0, 0.3);
 }
 
-html {
-  position: relative;
-  min-height: 100%;
-}
 
 body {
     margin-bottom: 60px;
@@ -32,3 +30,33 @@ body {
     font-family: 'PokeFont', fallback;
 
 }
+
+
+.navbar {
+    position: relative;
+    background-color: white;
+    border: 5px solid #FF97A4; /* Inner border */
+    border-left: 20px solid #E83030;
+    border-right: 20px solid #E83030;
+
+}
+
+    .navbar:before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        bottom: -5px;
+        left: -5px;
+        right: -5px;
+        border-left: 5px solid #FF97A4; /* Outer left border */
+        border-right: 5px solid #FF97A4; /* Outer right border */
+        pointer-events: none;
+    }
+
+.nav-link {
+    color: black; /* Change the color of the links to black */
+}
+
+    .nav-link:hover {
+        color: red; /* Change the color of the links to red when hovered */
+    }
