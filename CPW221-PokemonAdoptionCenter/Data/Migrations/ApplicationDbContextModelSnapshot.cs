@@ -144,7 +144,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 3,
                             BattleType = "Grass",
                             Description = "This Pokémon has been chosen! Best of luck, buddy!",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-Lilo(Flabebe).jpg",
                             IsAvailable = false,
                             Name = "Lilo",
                             PokemonType = "Flabébé"

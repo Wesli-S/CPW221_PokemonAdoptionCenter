@@ -34,7 +34,7 @@ namespace CPW221_PokemonAdoptionCenter.Data
 
                 new Pokemon { Id = 7, Name = "Oliver", PokemonType = "Carnivine", BattleType = "Grass", Age = 13, Description = "This Pokémon has been chosen! Best of luck, buddy!", IsAvailable = false, ImageOfPokemon = "/images/Placeholder.png" },
 
-                new Pokemon { Id = 8, Name = "Lilo", PokemonType = "Flabébé", BattleType = "Grass", Age = 3, Description = "This Pokémon has been chosen! Best of luck, buddy!", IsAvailable = false, ImageOfPokemon = "/images/Placeholder.png" },
+                new Pokemon { Id = 8, Name = "Lilo", PokemonType = "Flabébé", BattleType = "Grass", Age = 3, Description = "This Pokémon has been chosen! Best of luck, buddy!", IsAvailable = false, ImageOfPokemon = "/images/ICY-Lilo(Flabebe).jpg" },
 
                 new Pokemon { Id = 9, Name = "Crystal", PokemonType = "Vaporeon", BattleType = "Water", Age = 9, Description = "Crystal spends most of his time in the pond behind our center, most often dozing or floating in circles. He will occasionally leave the pond to spend time with other Pokémon, but he most often prefers to loaf around. If you're looking for a good couch companion, this is your guy!", IsAvailable = true, ImageOfPokemon = "/images/Placeholder.png" },
 
