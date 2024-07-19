@@ -57,9 +57,14 @@ body {
     }
 
 .nav-link {
-    color: black; /* Change the color of the links to black */
+    color: black;
+    background-color: #E83030;
+    border: 1px solid #707070;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
 }
 
     .nav-link:hover {
-        color: red; /* Change the color of the links to red when hovered */
+        color: white; /* Change the color of the links to red when hovered */
     }
