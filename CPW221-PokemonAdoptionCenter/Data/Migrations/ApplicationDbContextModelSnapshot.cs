@@ -166,7 +166,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 102,
                             BattleType = "Grass/Ghost",
                             Description = "Found in an abandoned house, Theodore was brought into our care after it was determined he could not provide for himself in the wild. While he may seem incredibly shy and closed off at first, Theodore is actually very sweet once you get to know him.",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-Theodore(Phantump).jpg",
                             IsAvailable = true,
                             Name = "Theodore",
                             PokemonType = "Phantump"
@@ -177,7 +177,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 4,
                             BattleType = "Psychic",
                             Description = "Dropped off at our center as an egg, Oakley is fairly mild mannered and prefers to be alone most days. However, despite not wanting to play with the other Pokémon, Oakley will often be found close by to an employee, most often just watching as we go about our work.",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-Oakley(Espurr).jpg",
                             IsAvailable = true,
                             Name = "Oakley",
                             PokemonType = "Espurr"
@@ -188,7 +188,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 13,
                             BattleType = "Psychic/Fairy",
                             Description = "This Pokémon is currently still in rehabilitation. Please be patient with her!",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-Jade(Kirlia).jpg",
                             IsAvailable = false,
                             Name = "Jade",
                             PokemonType = "Kirlia"
