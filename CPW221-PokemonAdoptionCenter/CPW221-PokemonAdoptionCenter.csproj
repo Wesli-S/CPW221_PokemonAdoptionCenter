@@ -20,6 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\images\ICY-CaptainSushi%28GMeowth%29.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\css\Pokemon GB.ttf" />
     <None Include="wwwroot\images\Placeholder.png" />
   </ItemGroup>

@@ -26,7 +26,7 @@ namespace CPW221_PokemonAdoptionCenter.Data
 
                 new Pokemon {Id = 3, Name = "Apollo", PokemonType = "Sylveon (Shiny)", BattleType = "Fairy", Age = 7, Description = "Apollo was dropped off at our center by his owner who was 'displeased' about Apollo's evolutionary choices. Nevertheless, Apollo continues to be incredibly affectionate and loving.", IsAvailable = true, ImageOfPokemon = "/images/ICY-Apollo(Sylveon).jpg" },
 
-                new Pokemon {Id = 4, Name = "Captain Sushi", PokemonType = "Galarian Meowth", BattleType = "Steel", Age = 10, Description = "This Pokémon has been chosen! Best of luck, buddy!", IsAvailable = false, ImageOfPokemon = "/images/Placeholder.png" },
+                new Pokemon {Id = 4, Name = "Captain Sushi", PokemonType = "Galarian Meowth", BattleType = "Steel", Age = 10, Description = "This Pokémon has been chosen! Best of luck, buddy!", IsAvailable = false, ImageOfPokemon = "/images/ICY-CaptainSushi(GMeowth).jpg" },
 
                 new Pokemon {Id = 5, Name = "Cleo", PokemonType = "Azumarill", BattleType = "Fairy/Water", Age = 8, Description = "Cleo is one of the most bubbly Pokémon we've ever met (both figuratively and literally) She was dropped off by her previous owner who could no longer care for her.", IsAvailable = true,  ImageOfPokemon = "/images/Placeholder.png" }, 
 

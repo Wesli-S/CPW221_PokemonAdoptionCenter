@@ -100,7 +100,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 10,
                             BattleType = "Steel",
                             Description = "This Pokémon has been chosen! Best of luck, buddy!",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-CaptainSushi(GMeowth).jpg",
                             IsAvailable = false,
                             Name = "Captain Sushi",
                             PokemonType = "Galarian Meowth"
