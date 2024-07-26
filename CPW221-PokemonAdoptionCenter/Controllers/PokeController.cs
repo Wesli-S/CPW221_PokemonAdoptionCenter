@@ -10,10 +10,12 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
     public class PokeController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IEmailProvider _emailProvider;
 
-        public PokeController(ApplicationDbContext context)
+        public PokeController(ApplicationDbContext context, IEmailProvider emailProvider)
         {
             _context = context;
+            _emailProvider = emailProvider;
         }
 
         /// <summary>
@@ -60,6 +62,7 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
 
         public async Task<IActionResult> TYForSubmitting()
         {
+            await _emailProvider.SendEmailAsync(null, null, null, null, null);
             return View();
         }
     }
