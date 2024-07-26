@@ -100,7 +100,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 10,
                             BattleType = "Steel",
                             Description = "This Pokémon has been chosen! Best of luck, buddy!",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-CaptainSushi(GMeowth).jpg",
                             IsAvailable = false,
                             Name = "Captain Sushi",
                             PokemonType = "Galarian Meowth"
@@ -155,7 +155,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 9,
                             BattleType = "Water",
                             Description = "Crystal spends most of his time in the pond behind our center, most often dozing or floating in circles. He will occasionally leave the pond to spend time with other Pokémon, but he most often prefers to loaf around. If you're looking for a good couch companion, this is your guy!",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-Crystal(Vaporeon).jpg",
                             IsAvailable = true,
                             Name = "Crystal",
                             PokemonType = "Vaporeon"

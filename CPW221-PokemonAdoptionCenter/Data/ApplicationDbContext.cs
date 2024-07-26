@@ -26,7 +26,7 @@ namespace CPW221_PokemonAdoptionCenter.Data
 
                 new Pokemon {Id = 3, Name = "Apollo", PokemonType = "Sylveon (Shiny)", BattleType = "Fairy", Age = 7, Description = "Apollo was dropped off at our center by his owner who was 'displeased' about Apollo's evolutionary choices. Nevertheless, Apollo continues to be incredibly affectionate and loving.", IsAvailable = true, ImageOfPokemon = "/images/ICY-Apollo(Sylveon).jpg" },
 
-                new Pokemon {Id = 4, Name = "Captain Sushi", PokemonType = "Galarian Meowth", BattleType = "Steel", Age = 10, Description = "This Pokémon has been chosen! Best of luck, buddy!", IsAvailable = false, ImageOfPokemon = "/images/Placeholder.png" },
+                new Pokemon {Id = 4, Name = "Captain Sushi", PokemonType = "Galarian Meowth", BattleType = "Steel", Age = 10, Description = "This Pokémon has been chosen! Best of luck, buddy!", IsAvailable = false, ImageOfPokemon = "/images/ICY-CaptainSushi(GMeowth).jpg" },
 
                 new Pokemon {Id = 5, Name = "Cleo", PokemonType = "Azumarill", BattleType = "Fairy/Water", Age = 8, Description = "Cleo is one of the most bubbly Pokémon we've ever met (both figuratively and literally) She was dropped off by her previous owner who could no longer care for her.", IsAvailable = true,  ImageOfPokemon = "/images/Placeholder.png" }, 
 
@@ -36,7 +36,7 @@ namespace CPW221_PokemonAdoptionCenter.Data
 
                 new Pokemon { Id = 8, Name = "Lilo", PokemonType = "Flabébé", BattleType = "Grass", Age = 3, Description = "This Pokémon has been chosen! Best of luck, buddy!", IsAvailable = false, ImageOfPokemon = "/images/ICY-Lilo(Flabebe).jpg" },
 
-                new Pokemon { Id = 9, Name = "Crystal", PokemonType = "Vaporeon", BattleType = "Water", Age = 9, Description = "Crystal spends most of his time in the pond behind our center, most often dozing or floating in circles. He will occasionally leave the pond to spend time with other Pokémon, but he most often prefers to loaf around. If you're looking for a good couch companion, this is your guy!", IsAvailable = true, ImageOfPokemon = "/images/Placeholder.png" },
+                new Pokemon { Id = 9, Name = "Crystal", PokemonType = "Vaporeon", BattleType = "Water", Age = 9, Description = "Crystal spends most of his time in the pond behind our center, most often dozing or floating in circles. He will occasionally leave the pond to spend time with other Pokémon, but he most often prefers to loaf around. If you're looking for a good couch companion, this is your guy!", IsAvailable = true, ImageOfPokemon = "/images/ICY-Crystal(Vaporeon).jpg" },
 
                 new Pokemon { Id = 10, Name = "Theodore", PokemonType = "Phantump", BattleType = "Grass/Ghost", Age = 102, Description = "Found in an abandoned house, Theodore was brought into our care after it was determined he could not provide for himself in the wild. While he may seem incredibly shy and closed off at first, Theodore is actually very sweet once you get to know him.", IsAvailable = true, ImageOfPokemon = "/images/ICY-Theodore(Phantump).jpg" },
 
