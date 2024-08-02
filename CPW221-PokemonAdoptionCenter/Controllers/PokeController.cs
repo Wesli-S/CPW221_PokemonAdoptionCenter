@@ -1,6 +1,7 @@
 ﻿using CPW221_PokemonAdoptionCenter.Data;
 using CPW221_PokemonAdoptionCenter.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -11,11 +12,13 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly IEmailProvider _emailProvider;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public PokeController(ApplicationDbContext context, IEmailProvider emailProvider)
+        public PokeController(ApplicationDbContext context, IEmailProvider emailProvider, UserManager<IdentityUser> manager)
         {
             _context = context;
             _emailProvider = emailProvider;
+            _userManager = manager;
         }
 
         /// <summary>
@@ -62,7 +65,16 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
 
         public async Task<IActionResult> TYForSubmitting()
         {
-            await _emailProvider.SendEmailAsync(null, null, null, null, null);
+            var user = await _userManager.GetUserAsync(User);
+            if (user != null)
+            {
+                var userEmail = user.Email;
+                await _emailProvider.SendEmailAsync(userEmail, 
+                    "silvergurlsmart@gmail.com", 
+                    "Wanna subscribe to our newsletter?", 
+                    "We know you do~! Sign up to get notified about events at our center!", 
+                    "<strong>We know you do~! Sign up to get notified about events at our center!</strong>");
+            }
             return View();
         }
     }

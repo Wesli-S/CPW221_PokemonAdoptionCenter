@@ -25,9 +25,9 @@ namespace CPW221_PokemonAdoptionCenter.Models
                 From = new EmailAddress("silvergurlsmart@gmail.com", "ICY Team"),
                 Subject = "Wanna subscribe to our newsletter?",
                 PlainTextContent = "We know you do~! Sign up to get notified about events at our center!",
-                HtmlContent = "<strong>and easy to do anywhere, even with C#</strong>"
+                HtmlContent = "<strong> We know you do~! Sign up to get notified about events at our center!\"</strong>"
             };
-            msg.AddTo(new EmailAddress("silvergurlsmart@gmail.com", "Adoption Candidate"));
+            msg.AddTo(new EmailAddress(toEmail, "Adoption Candidate"));
             await client.SendEmailAsync(msg);
         }
     }
