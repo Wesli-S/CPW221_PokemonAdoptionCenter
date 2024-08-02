@@ -1,10 +1,13 @@
 ﻿using CPW221_PokemonAdoptionCenter.Data;
 using CPW221_PokemonAdoptionCenter.Models;
+using Humanizer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Elfie.Serialization;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using System.Runtime.Intrinsics.X86;
 
 namespace CPW221_PokemonAdoptionCenter.Controllers
 {
@@ -71,9 +74,11 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
                 var userEmail = user.Email;
                 await _emailProvider.SendEmailAsync(userEmail, 
                     "silvergurlsmart@gmail.com", 
-                    "Wanna subscribe to our newsletter?", 
-                    "We know you do~! Sign up to get notified about events at our center!", 
-                    "<strong>We know you do~! Sign up to get notified about events at our center!</strong>");
+                    "Thank you so much for your application!",
+                    "We're thrilled that you want to give one of our Pokémon a new home in you!" +
+                    "Once we've completed going through your application, we'll be sure to contact you again to let you know if you qualify!" +
+                    "Hope we get to see you real soon!", 
+                    "<strong>-Yumi Smart (ICY Team)</strong>");
             }
             return View();
         }
