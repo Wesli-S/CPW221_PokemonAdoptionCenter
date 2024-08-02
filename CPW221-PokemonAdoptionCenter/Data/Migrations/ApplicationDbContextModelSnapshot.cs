@@ -67,7 +67,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 307,
                             BattleType = "Poison/Ghost",
                             Description = "Super sweet and a bit shy. Molla was found still in her ball after her owner had passed away, and now hopes to find a new playmate. She enjoys night walks and hide-and-seek",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-Molla(Haunter).jpg",
                             IsAvailable = true,
                             Name = "Molla",
                             PokemonType = "Haunter"
@@ -78,7 +78,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 4,
                             BattleType = "Poison/Ground",
                             Description = "Coming all the way from the Paldea region, Kinito has a naturally upbeat personality. Kinito enjoys swimming, splashing in puddles, and long afternoon naps.",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-Kinito(Wooper).jpg",
                             IsAvailable = true,
                             Name = "Kinito",
                             PokemonType = "Paldean Wooper"
@@ -111,7 +111,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 8,
                             BattleType = "Fairy/Water",
                             Description = "Cleo is one of the most bubbly Pokémon we've ever met (both figuratively and literally) She was dropped off by her previous owner who could no longer care for her.",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-Cleo(Azumarill).jpg",
                             IsAvailable = true,
                             Name = "Cleo",
                             PokemonType = "Azumarill"
@@ -122,7 +122,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 5,
                             BattleType = "Poison/Water",
                             Description = "Found tangled in beach debris. When she refused to return to the sea, she was brought to us to find a home. Chompee is incredibly affectionate and adores physical contact. Just watch out for those spikes, as they may hurt.",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-Chompee(Mareanie).jpg",
                             IsAvailable = true,
                             Name = "Chompee",
                             PokemonType = "Mareanie"
@@ -133,7 +133,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Age = 13,
                             BattleType = "Grass",
                             Description = "This Pokémon has been chosen! Best of luck, buddy!",
-                            ImageOfPokemon = "/images/Placeholder.png",
+                            ImageOfPokemon = "/images/ICY-Oliver(Carnivine).jpg",
                             IsAvailable = false,
                             Name = "Oliver",
                             PokemonType = "Carnivine"
@@ -154,7 +154,7 @@ namespace CPW221_PokemonAdoptionCenter.Data.Migrations
                             Id = 9,
                             Age = 9,
                             BattleType = "Water",
-                            Description = "Crystal spends most of his time in the pond behind our center, most often dozing or floating in circles. He will occasionally leave the pond to spend time with other Pokémon, but he most often prefers to loaf around. If you're looking for a good couch companion, this is your guy!",
+                            Description = "Crystal spends most of his time in the pond behind our center, most often dozing or floating in circles. He will occasionally leave the pond to spend time with other Pokémon, but he most often prefers to loaf around. If you're looking for a good couch companion, this may be your guy!",
                             ImageOfPokemon = "/images/ICY-Crystal(Vaporeon).jpg",
                             IsAvailable = true,
                             Name = "Crystal",
