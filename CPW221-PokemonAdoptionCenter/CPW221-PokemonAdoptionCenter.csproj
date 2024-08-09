@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\images\ICY-CaptainSushi%28GMeowth%29.jpg" />
+    <_ContentIncludedByDefault Remove="wwwroot\images\ICY-PokepuffBakesale.jpg" />
   </ItemGroup>
 
   <ItemGroup>
