@@ -78,7 +78,10 @@ namespace CPW221_PokemonAdoptionCenter.Controllers
                     "We're thrilled that you want to give one of our Pokémon a new home in you!" +
                     "Once we've completed going through your application, we'll be sure to contact you again to let you know if you qualify!" +
                     "Hope we get to see you real soon!", 
-                    "<strong>-Yumi Smart (ICY Team)</strong>");
+                    "<strong>" + "We're thrilled that you want to give one of our Pokémon a new home in you!" +
+                    "Once we've completed going through your application, we'll be sure to contact you again to let you know if you qualify!" +
+                    "Hope we get to see you real soon!" +
+                    "-Yumi Smart (ICY Team)</strong>");
             }
             return View();
         }
