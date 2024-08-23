@@ -1,5 +1,5 @@
 # CPW221_PokemonAdoptionCenter
-![Screenshot (595)](https://github.com/Wesli-S/CPW221_PokemonAdoptionCenter/assets/146999017/a3c67f79-9f61-49a3-a055-3af888ee5d0e)
+![Screenshot (43)](https://github.com/user-attachments/assets/164c90f3-95ae-4ddb-905f-f133250cee42)
 The goal of this project is to create a website for a fictional adoption center in the Pokemon franchise. 
 It will include
 - original art
@@ -13,6 +13,6 @@ It will include
 - Must run on ASP.NET Core MVC
 - Database uses SQL Server
 - Website published to Microsoft Azure and run on Linux
-![Screenshot (598)](https://github.com/Wesli-S/CPW221_PokemonAdoptionCenter/assets/146999017/28f87f2d-020a-44ea-b792-81f9bc08e131)
-![Screenshot (596)](https://github.com/Wesli-S/CPW221_PokemonAdoptionCenter/assets/146999017/00dc17e5-7af8-4c79-9063-fad4422f5af5)
-![Screenshot (597)](https://github.com/Wesli-S/CPW221_PokemonAdoptionCenter/assets/146999017/39a5ed9d-2f2a-4e6b-84c3-098e1a2b71b5)
+![Screenshot (44)](https://github.com/user-attachments/assets/de1793a7-fbf3-4239-9bc2-7de72a053975)
+![Screenshot (45)](https://github.com/user-attachments/assets/984dfabf-b9a9-4b4d-a337-8ef1906a388d)
+![Screenshot (46)](https://github.com/user-attachments/assets/0a0dee9e-3dbd-4b17-95a9-f929b0281649)
